@@ -5,15 +5,82 @@ DESC: Comment auto-héberger un blog sur un plug computer - premier billet
 FORMAT: raw 
 -----
 BODY:
-<p>&Ccedil;a fait quelques mois que je voulais me procurer un plugcomputer pour tester l'auto-hébergement pas cher à la maison. Le blog de Vincent Rabah (http://www.it-wars.com/) m'avait mis l'eau à la bouche avec ses articles sur les dockstars.
-Les soldes de janvier ont été l'occasion de mettre la main par hasard sur un Pogoplug pro pour moins de 50 euros.</p>
+<h2>
+De quoi parle ce billet
+</h2>
+<p>&Ccedil;a fait quelques mois que je voulais me procurer un plugcomputer pour tester l'auto-hébergement pas cher à la maison. Le blog de Vincent Rabah (<a href="http://www.it-wars.com/">http://www.it-wars.com/</a>) m'avait mis l'eau à la bouche avec ses articles sur les dockstars.
+Les soldes de janvier ont été l'occasion de mettre la main par hasard sur un Pogoplug pro pour moins de 50 euros (chez Boulanger).</p>
 
 <p>
 J'ai donc sauté sur cette occasion qui va me permettre :
 <ul>
 <li>De mettre en place une solution d'auto-hébergement
-<li>D'ouvrir une blog et avoir des choses intéressantes (du moins j'espère) à écrire dessus
+<li>D'ouvrir une blog et avoir des choses intéressantes (du moins j'espère) à écrire
 </ul> 
-Ce blog va donc me servir a décrire l'installation et la configuration de ce pogoplug au fil d'une série de billets (j'en profiterai aussi pour parler d'administration Linux/Unix et peut-être aussi de python, de php et de nodejs). 
-</p>>
+Ce blog va donc me servir à décrire l'installation et la configuration de ce plugcomputer au fil d'une série de billets (j'en profiterai aussi pour parler d'administration Linux/Unix et peut-être aussi de python, de php et de nodejs). Le blog devrait évoluer au fil des articles qui vont détailler la configuration d'un environnement d'auto-hébergement.
+</p>
+<h2>
+  Unplugcompuquoi ?!?
+</h2>
+<p>
+<a href="http://fr.wikipedia.org/wiki/Plug_computer">Wikipedia</a> présente les plugcomputers comme <code>... un ordinateur dont le facteur de forme (la taille) est particulièrement petite, et dont le coût est généralement réduit...</code>. <br />
+Le faible encombrement, le prix réduit et la consommation extrêmement basse de ces appareils en fait des candidats idéals à la mise en place de "serveurs domestiques".
+</p>
+<h2>
+  Caractéristiques du pogoplug pro
+</h2>
+<h3>
+  Utilisation prévue par le fabricant
+</h3>
+<p>
+  Le pogoplug pro permet de partager les données présentes sur un ou plusieurs disques durs externes sur le réseau local ou sur Internet. Le produit est présenté comme un cloud à domicile. Le principe de fonctionnement est assez simple :
+<ol>
+  <li>Brancher le pogoplug à une box adsl</li>
+  <li>Brancher un disque dur externe</li>
+  <li>Créer gratuitement un compte sur le site du fabricant</li>
+  <li>Installer les applications pogoplug sur un PC / Iphone / Ipad / Mac</li>
+  <li>Stocker des photos / vidéos / musiques via les applications pogoplug => les medias seront alors disponibles de n'importe où dans le monde (à condition d'avoir un accès Internet)</li>
+</ol>
+</p>
+
+<h3>
+  Caractéristiques techniques
+</h3>
+<p>
+  <table>
+    <tr>
+      <th>CPU</th><td>ARM V6 700Mhz dual core</td>
+    </tr>
+    <tr>
+      <th>Mémoire</th><td>128Mo</td>
+    </tr>
+    <tr>
+     <th>Disque dur</th><td>Pas de disque</td>
+    </tr>
+    <tr>
+      <th>Connectiques</th><td>4 ports usb, 1 port ethernet gigabits</td>
+    </tr>
+    <tr>
+      <th>Wifi</th><td>WIFI 802.11n</td>
+    </tr>
+  </table>
+  Comme vous pouvez le voir le pogoplug n'est pas un monstre de puissance, mais c'est bien suffisant pour faire ce pourquoi il est destiné (ou faire tourner une petite distribution linux, ce que nous verrons plus tard ;-) ).
+</p>
+<h3>
+  Ce qui est faisable avec le pogoplug
+</h3>
+<p>
+  L'utilisation de base du pogoplug est bien sympathique mais est bridée. Il n'est pas prévu de configurer d'autres services que ceux fournis par le constructeur... bien dommage de ne pas pouvoir faire tourner un petit serveur web sur la machine. Comme bien souvent la situation n'est pas restée en l'état et des outils sont disponibles sur le net pour permettre au pogoplug de booter sur une clé usb hébergeant un linux. Ces outils modifient le boot loader du pogoplug (u-boot).<br />
+Personnellement, je me suis tourné vers archlinuxarm et son <a href="http://archlinuxarm.org/platforms/armv6/pogoplug-provideov3">tutoriel</a> très simple et rapide à mettre en oeuvre. <br />
+Une fois que la distribution archlinux est installée sur la machine tout est possible !! (installation de python, nodejs, samba, dépôt git /svn / cvs etc ...)</p>
+<p>
+<strong>Attention</strong> : la modification du boot loader du pogoplug n'est pas sans danger et une mauvaise manipulation peut tout simplement rendre l'appareil inutilisable... de plus la modification de l'u-boot annule la garantie de l'appareil... voilà vous êtes prévenus ;-) .
+</p>
+<h2>
+  A suivre
+</h2>
+<p>
+  Le prochain article traitera du choix d'un serveur web et d'un système de blog suffisament léger pour fonctionner correctement sur un plugcomputer.
+</p>
+
 END-----
