@@ -1,0 +1,19 @@
+TITLE: Pogoplug pro pour l'auto-hébergement - Premier billet
+AUTHOR: olref
+DATE: 15/01/2012 10:05:44
+DESC: Comment auto-héberger un blog sur un plug computer - premier billet
+FORMAT: raw 
+-----
+BODY:
+<p>&Ccedil;a fait quelques mois que je voulais me procurer un plugcomputer pour tester l'auto-hébergement pas cher à la maison. Le blog de Vincent Rabah (http://www.it-wars.com/) m'avait mis l'eau à la bouche avec ses articles sur les dockstars.
+Les soldes de janvier ont été l'occasion de mettre la main par hasard sur un Pogoplug pro pour moins de 50 euros.</p>
+
+<p>
+J'ai donc sauté sur cette occasion qui va me permettre :
+<ul>
+<li>De mettre en place une solution d'auto-hébergement
+<li>D'ouvrir une blog et avoir des choses intéressantes (du moins j'espère) à écrire dessus
+</ul> 
+Ce blog va donc me servir a décrire l'installation et la configuration de ce pogoplug au fil d'une série de billets (j'en profiterai aussi pour parler d'administration Linux/Unix et peut-être aussi de python, de php et de nodejs). 
+</p>>
+END-----
