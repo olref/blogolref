@@ -1,0 +1,16 @@
+TITLE: Pogoplug pro pour l'auto-hébergement - Choix des outils
+AUTHOR: olref
+DATE: 
+DESC: Pour ne pas surcharger le plugcomputer : Quel serveur choisir ? Quel système de blog?
+FORMAT: raw 
+-----
+BODY:
+<h2>
+Problématique
+</h2>
+<p>
+Ce blog est hébergé sur un plugcomputer (un pogoplug pro pour être précis). Ces machines ont des performances très limitées, il n'est donc pas envisageable d'utiliser un serveur web comme Apache bien trop gourmand en ressource. <br />
+...
+</p>
+
+END-----
