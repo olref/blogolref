@@ -1,0 +1,1 @@
+Pour gérer les commentaires avec nanoblogger, il suffit d'utiliser disqus et de modifier le template permalien_entry.htm pour ajouter le javascript de disqus. On regénère le blog et hop ça roule : merci http://blog.wolf.am/archives/2010/01/10/migration_vers_nanoblogger__mise_en_orbite/index.html
