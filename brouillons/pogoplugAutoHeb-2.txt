@@ -10,7 +10,34 @@ Problématique
 </h2>
 <p>
 Ce blog est hébergé sur un plugcomputer (un pogoplug pro pour être précis). Ces machines ont des performances très limitées, il n'est donc pas envisageable d'utiliser un serveur web comme Apache bien trop gourmand en ressource. <br />
-...
 </p>
+<h2>Le choix d'un gestionnaire de blog</h2>
+<p>
+  Avant de choisir un serveur web, j'ai commencé par chercher le gestionnaire de blog de mes rêves. J'ai rapidement sélectionnés 2 candidats :
+  <ul>
+    <li><a href="http://looseleafjs.org/" title="looseleaf">Looseleaf</a> : un blog qui fonctionne avec nodejs</li>
+    <li><a href="http://nanoblogger.sourceforge.net/" title="Nanoblogger">Nanoblogger</a> : blog en ligne de commande => génération de fichiers html : n'importe quel serveur web peut faire l'affaire</li>
+  </ul>
+</p>
+<h3>Looseleaf</h3>
+L'installation de looseleaf est très simple. Après avoir installé nodejs et npm (en les compilant à la main ou en utilisant 
+le gestionnaire de paquet de la distribution), il suffit de lancer la commande <code>npm looseleaf</code>
 
+<h3>Nanoblogger</h3>
+L'installation de nanoblogger est également très rapide, il suffit de télécharger l'archive sur le site officiel du blog 
+et de la décompresser dans le répertoire de votre choix. Le système de blog n'est constitué que de script bash et utilise
+des commandes linux standards, il est donc immédiatement fonctionnel.
+
+<h2>Le choix d'un serveur Web</h2>
+<p>
+  Mon choix s'étant porté sur nanoblogger, j'ai dû installé un serveur web sur mon plugcomputer. 
+  Il était inconcevable d'installer apache sur cette machine : il est bien trop lourd et complet 
+  pour l'utilisation que j'ai prévu d'en faire => servir de simple pages html. Mes recherches sur google m'ont orienté vers 
+  2 serveurs :
+  <ul>
+    <li>Nginx</li>
+    <li>lighttpd</li>
+  </ul>
+Mon choix s'est finalement porté sur nginx....
+</p>
 END-----
